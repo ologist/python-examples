@@ -1,4 +1,4 @@
 python-examples
 ===============
 
-python 스터디 예제
+listdir_examples.py : 특정 경로이 파일의 리스트를 sort해서 가져오는 예제
