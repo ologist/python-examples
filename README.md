@@ -11,6 +11,10 @@ download
 - http://sourceforge.net/projects/mysql-python/
 
 build & insatall
-"`python setup.py build"`
-"`python setup.py install"`
+"`
+python setup.py build
+"`
+"`
+python setup.py install
+"`
 
