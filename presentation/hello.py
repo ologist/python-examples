@@ -1,9 +1,10 @@
-from flask import Flask
-app = Flask(__name__)
+from infra.database import app,db 
+from domain.user import User 
 
-@app.route("/")
+@app.route("/hello")
 def hello():
-    return "Hello World!"
+    user = User.query.get(1)
+    return "Hello World2!" + user.username
 
 if __name__ == "__main__":
     app.run()
