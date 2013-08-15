@@ -1,10 +1,9 @@
-from infra.database import app,db 
-from domain.user import User 
+from app import app,db
+from flask import render_template
 
-@app.route("/hello")
+@app.route('/hello')
 def hello():
-    user = User.query.get(1)
-    return "Hello World2!" + user.username
+    return render_template('hello.html', name=user.username)
 
 if __name__ == "__main__":
     app.run()
